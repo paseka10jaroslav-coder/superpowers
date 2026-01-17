@@ -35,7 +35,7 @@ If Superpowers has helped you and you'd like to support the project, you can [sp
 
 ## Contributing
 
-Interested in contributing code or documentation? See the [Contributing](#contributing) section in the README.md and check out the `skills/writing-skills/SKILL.md` guide.
+Interested in contributing code or documentation? See the [Contributing](README.md#contributing) section in the README.md and check out the `skills/writing-skills/SKILL.md` guide.
 
 ## Maintainer
 
