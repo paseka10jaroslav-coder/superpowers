@@ -19,6 +19,8 @@ There's a bunch more to it, but that's the core of the system. And because the s
 
 If Superpowers has helped you do stuff that makes money and you are so inclined, I'd greatly appreciate it if you'd consider [sponsoring my opensource work](https://github.com/sponsors/obra).
 
+**Note:** For questions about GitHub Sponsors payments, payouts, or account issues, please contact [GitHub Support](https://support.github.com/) directly. See [SUPPORT.md](SUPPORT.md) for more information.
+
 Thanks! 
 
 - Jesse
@@ -155,5 +157,9 @@ MIT License - see LICENSE file for details
 
 ## Support
 
-- **Issues**: https://github.com/obra/superpowers/issues
+For detailed support information, see [SUPPORT.md](SUPPORT.md).
+
+- **Issues** (bugs & features): https://github.com/obra/superpowers/issues
+- **Discussions** (questions & help): https://github.com/obra/superpowers/discussions
 - **Marketplace**: https://github.com/obra/superpowers-marketplace
+- **Sponsorship/Payment Support**: Contact [GitHub Support](https://support.github.com/)
