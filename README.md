@@ -77,6 +77,19 @@ Fetch and follow instructions from https://raw.githubusercontent.com/obra/superp
 
 **Detailed docs:** [docs/README.opencode.md](docs/README.opencode.md)
 
+### Docker (Optional)
+
+For running in an isolated containerized environment:
+
+**Detailed docs:** [docs/DOCKER.md](docs/DOCKER.md)
+
+Quick start:
+```bash
+cp .env.example .env
+# Edit .env with your API keys
+docker compose up -d --build
+```
+
 ## The Basic Workflow
 
 1. **brainstorming** - Activates before writing code. Refines rough ideas through questions, explores alternatives, presents design in sections for validation. Saves design document.
