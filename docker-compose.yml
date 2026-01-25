@@ -1,0 +1,33 @@
+services:
+  superpowers:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: superpowers
+    
+    # Mount the repository for live development
+    volumes:
+      - .:/app
+      # Exclude node_modules to avoid conflicts
+      - /app/node_modules
+    
+    # Load environment variables from .env file
+    env_file:
+      - .env
+    
+    # Keep container running for interactive use
+    stdin_open: true
+    tty: true
+    
+    # Working directory
+    working_dir: /app
+    
+    # Default command
+    command: /bin/bash
+    
+    # Network configuration
+    network_mode: bridge
+    
+    # Optional: Expose ports if needed for future services
+    # ports:
+    #   - "3000:3000"
