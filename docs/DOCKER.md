@@ -15,7 +15,7 @@ This guide explains how to run Superpowers in a Docker container, which can be u
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/obra/superpowers.git
+git clone https://github.com/paseka10jaroslav-coder/superpowers.git
 cd superpowers
 ```
 
@@ -115,7 +115,7 @@ If you're running Ollama on your host machine and can't connect from Docker:
 ### Environment variables not loading
 
 1. Ensure `.env` file exists in the repository root
-2. Verify the `.env` file has proper permissions and is readable
+2. Check that `.env` is not in `.gitignore` for your local copy
 3. Restart the container after modifying `.env`:
    ```bash
    docker compose down
