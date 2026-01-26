@@ -1,0 +1,53 @@
+% This is a simple and unrealistic example showing how to modify a font
+% with a 'constructor' defining a font feature. It works with Harfbuzz. 
+% Take also a look to luaotfload-szss.lua, which shows how to add
+% ligatures.
+\documentclass{article}
+
+\usepackage{fontspec}
+
+\directlua{
+
+% First, the function to be executed when the font is loaded (fonts
+% cannot be modified once loaded). Here, f is the font, which contains
+% a table with the characters properties. VF (virtual font) commands
+% also work, with slight changes. Luatex adds a few commands to the
+% basic VF ones. See the luatex manual.
+function redden(f)
+  local u = unicode.utf8
+  for i, v in pairs(f.characters) do
+    if i < 256 and u.find(u.char(i), '[aeiouó]') then
+      v.width = tex.sp('7pt')  % 
+      v.commands = {
+        { "special", "pdf: 1 0 0 rg" },
+        { "char", i },
+        { "special", "pdf: 0 g" }
+      }
+    end
+  end
+end
+
+% Now, we register the font feature. Besides 'manipulators', loaofload
+% provides 'initializers' and 'processors'. See fonts-mkiv.pdf.
+fonts.constructors.features.otf.register {
+  name = "redden",
+  manipulators = {
+    base = redden, % Base renderer
+    node = redden, % Node renderer
+    plug = redden  % Harfbuzz renderer
+  }
+}
+
+}
+
+% Now define the font with the feature activated. Note with babel
+% \babelfont can be used to assign different fonts to different
+% languages, in case a constructor is devised for a specific language.
+% Here we use the generic fontspec command.
+\setmainfont[RawFeature=+redden, Renderer=Harfbuzz]{FreeSerif}
+
+\begin{document}
+
+Supercalifragilisticexpialidocióus
+
+\end{document}
