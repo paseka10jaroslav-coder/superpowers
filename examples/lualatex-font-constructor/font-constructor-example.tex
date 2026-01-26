@@ -17,7 +17,7 @@ function redden(f)
   local u = unicode.utf8
   for i, v in pairs(f.characters) do
     if i < 256 and u.find(u.char(i), '[aeiouó]') then
-      v.width = tex.sp('7pt')  % 
+      v.width = tex.sp('7pt')
       v.commands = {
         { "special", "pdf: 1 0 0 rg" },
         { "char", i },

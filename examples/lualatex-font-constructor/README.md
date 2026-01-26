@@ -55,9 +55,9 @@ This function:
 fonts.constructors.features.otf.register {
   name = "redden",
   manipulators = {
-    base = redden, % Base renderer
-    node = redden, % Node renderer
-    plug = redden  % Harfbuzz renderer
+    base = redden, -- Base renderer
+    node = redden, -- Node renderer
+    plug = redden  -- Harfbuzz renderer
   }
 }
 ```
