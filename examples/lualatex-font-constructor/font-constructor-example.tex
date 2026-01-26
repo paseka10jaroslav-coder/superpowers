@@ -8,11 +8,11 @@
 
 \directlua{
 
-% First, the function to be executed when the font is loaded (fonts
-% cannot be modified once loaded). Here, f is the font, which contains
-% a table with the characters properties. VF (virtual font) commands
-% also work, with slight changes. Luatex adds a few commands to the
-% basic VF ones. See the luatex manual.
+-- First, the function to be executed when the font is loaded (fonts
+-- cannot be modified once loaded). Here, f is the font, which contains
+-- a table with the characters properties. VF (virtual font) commands
+-- also work, with slight changes. Luatex adds a few commands to the
+-- basic VF ones. See the luatex manual.
 function redden(f)
   local u = unicode.utf8
   for i, v in pairs(f.characters) do
@@ -27,14 +27,14 @@ function redden(f)
   end
 end
 
-% Now, we register the font feature. Besides 'manipulators', luaotfload
-% provides 'initializers' and 'processors'. See fonts-mkiv.pdf.
+-- Now, we register the font feature. Besides 'manipulators', luaotfload
+-- provides 'initializers' and 'processors'. See fonts-mkiv.pdf.
 fonts.constructors.features.otf.register {
   name = "redden",
   manipulators = {
-    base = redden, % Base renderer
-    node = redden, % Node renderer
-    plug = redden  % Harfbuzz renderer
+    base = redden, -- Base renderer
+    node = redden, -- Node renderer
+    plug = redden  -- Harfbuzz renderer
   }
 }
 
