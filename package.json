@@ -1,0 +1,12 @@
+{
+  "name": "superpowers-math",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Math utilities for superpowers",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
