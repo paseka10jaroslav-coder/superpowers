@@ -1,172 +1,236 @@
-# Superpowers
+# Jaroslav Langer — Senior DevOps Engineer | Blockchain Developer | Automation Architect
 
-Superpowers is a complete software development workflow for your coding agents, built on top of a set of composable "skills" and some initial instructions that make sure your agent uses them.
+[![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)](https://www.terraform.io/)
+[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Solana](https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://solana.com/)
+[![TON](https://img.shields.io/badge/TON-0098EA?style=for-the-badge&logo=ton&logoColor=white)](https://ton.org/)
+[![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white)](https://ethereum.org/)
+[![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)](https://n8n.io/)
 
-## How it works
+---
 
-It starts from the moment you fire up your coding agent. As soon as it sees that you're building something, it *doesn't* just jump into trying to write code. Instead, it steps back and asks you what you're really trying to do. 
+## 👋 About Me
 
-Once it's teased a spec out of the conversation, it shows it to you in chunks short enough to actually read and digest. 
+I build cloud infrastructure that scales, blockchain tools that perform, and automation systems that eliminate manual work. Based in Czech Republic, working globally.
 
-After you've signed off on the design, your agent puts together an implementation plan that's clear enough for an enthusiastic junior engineer with poor taste, no judgement, no project context, and an aversion to testing to follow. It emphasizes true red/green TDD, YAGNI (You Aren't Gonna Need It), and DRY. 
+**What I bring to the table:**
+- Production-grade AWS infrastructure managed with Terraform
+- Blockchain development across TON, Solana, and Ethereum ecosystems
+- Business automation that saves hundreds of hours per month
+- A systematic, ship-fast approach — I solve problems, not create meetings
 
-Next up, once you say "go", it launches a *subagent-driven-development* process, having agents work through each engineering task, inspecting and reviewing their work, and continuing forward. It's not uncommon for Claude to be able to work autonomously for a couple hours at a time without deviating from the plan you put together.
+📧 **Contact:** [your-email@domain.com]  
+🔗 **Upwork:** [your-upwork-link]  
+💼 **Company:** JL Systematic s.r.o.
 
-There's a bunch more to it, but that's the core of the system. And because the skills trigger automatically, you don't need to do anything special. Your coding agent just has Superpowers.
+---
 
+## 🔧 DevOps & Cloud Infrastructure
 
-## Sponsorship
+### Terraform Multi-Environment AWS Architecture
+> Production-ready infrastructure-as-code for scalable cloud deployments
 
-If Superpowers has helped you do stuff that makes money and you are so inclined, I'd greatly appreciate it if you'd consider [sponsoring my opensource work](https://github.com/sponsors/obra).
+- Designed and deployed **multi-environment AWS infrastructure** (dev/staging/prod) using Terraform modules
+- VPC architecture with public/private subnets, NAT gateways, security groups
+- ECS Fargate container orchestration with auto-scaling policies
+- Lambda serverless functions for event-driven processing
+- RDS database provisioning with automated backups and failover
+- **IAM policies and roles** following least-privilege principle
+- State management via S3 + DynamoDB locking
 
-Thanks! 
+**Tech:** Terraform, AWS (VPC, ECS, Lambda, RDS, S3, CloudFront, Route53, IAM), HCL
 
-- Jesse
+---
 
+### CI/CD Pipeline Engineering
+> Automated build, test, and deployment pipelines
 
-## Installation
+- GitHub Actions workflows for automated testing, building, and deploying
+- Docker containerization — multi-stage builds optimized for production
+- Infrastructure deployment pipelines with Terraform plan/apply automation
+- Automated security scanning and dependency checks
+- Blue-green and rolling deployment strategies
 
-**Note:** Installation differs by platform. Claude Code has a built-in plugin system. Codex and OpenCode require manual setup.
+**Tech:** GitHub Actions, Docker, Docker Compose, Terraform Cloud, AWS ECR/ECS
 
-### Claude Code (via Plugin Marketplace)
+---
 
-In Claude Code, register the marketplace first:
+### AWS CloudShell Automation
+> Custom automation scripts for cloud resource management
 
-```bash
-/plugin marketplace add obra/superpowers-marketplace
-```
+- Python-based automation for AWS resource provisioning and management
+- Batch operations for EC2, S3, and Lambda management
+- Cost optimization scripts — automated resource cleanup and right-sizing
+- CloudWatch monitoring and alerting configuration
 
-Then install the plugin from this marketplace:
+**Tech:** Python, Boto3, AWS CLI, CloudShell, CloudWatch
 
-```bash
-/plugin install superpowers@superpowers-marketplace
-```
+---
 
-### Verify Installation
+## ⛓️ Blockchain Development
 
-Check that commands appear:
+### TON Blockchain Wallet Analysis Tools
+> On-chain analytics and wallet tracking for the TON ecosystem
 
-```bash
-/help
-```
+- Built wallet analysis tools for tracking transactions, balances, and token holdings
+- Real-time monitoring of wallet activity with alert systems
+- Integration with TON API for deep transaction analysis
+- Data visualization dashboards for portfolio tracking
 
-```
-# Should see:
-# /superpowers:brainstorm - Interactive design refinement
-# /superpowers:write-plan - Create implementation plan
-# /superpowers:execute-plan - Execute plan in batches
-```
+**Tech:** Python, TON SDK, REST APIs, Data Analytics
 
-### Codex
+---
 
-Tell Codex:
+### Sentiment-Based Crypto Trading Bots
+> Automated trading systems driven by market sentiment analysis
 
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.codex/INSTALL.md
-```
+- Developed trading bots that analyze market sentiment from multiple data sources
+- Integration with exchange APIs for automated order execution
+- Risk management systems — stop-loss, take-profit, position sizing
+- Backtesting framework for strategy validation
+- Real-time performance monitoring and reporting
 
-**Detailed docs:** [docs/README.codex.md](docs/README.codex.md)
+**Tech:** Python, Exchange APIs (Binance, Uphold), NLP, WebSocket, Pandas
 
-### OpenCode
+---
 
-Tell OpenCode:
+### Solana Smart Contract Development
+> DeFi protocols and on-chain programs on Solana
 
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.opencode/INSTALL.md
-```
+- Smart contract development for DeFi applications
+- SolVoid privacy protocol contributions
+- Token program integrations and SPL token handling
+- Wallet integration and transaction building
 
-**Detailed docs:** [docs/README.opencode.md](docs/README.opencode.md)
+**Tech:** Rust, Anchor, Solana CLI, Web3.js, TypeScript
 
-### Docker (Optional)
+---
 
-For running in an isolated containerized environment:
+### Ethereum & EVM Development
+> Smart contracts and DeFi integrations across EVM chains
 
-**Detailed docs:** [docs/DOCKER.md](docs/DOCKER.md)
+- Solidity smart contract development and deployment
+- DeFi protocol integrations — swaps, liquidity provision, yield strategies
+- Web3 application backends with ethers.js/web3.py
+- Gas optimization and contract security best practices
 
-Quick start:
-```bash
-cp .env.example .env
-# Edit .env with your API keys
-docker compose up -d --build
-```
+**Tech:** Solidity, Hardhat, ethers.js, web3.py, OpenZeppelin
 
-## The Basic Workflow
+---
 
-1. **brainstorming** - Activates before writing code. Refines rough ideas through questions, explores alternatives, presents design in sections for validation. Saves design document.
+## ⚡ Automation & Integration
 
-2. **using-git-worktrees** - Activates after design approval. Creates isolated workspace on new branch, runs project setup, verifies clean test baseline.
+### n8n Workflow Automation
+> Custom business automation replacing manual processes
 
-3. **writing-plans** - Activates with approved design. Breaks work into bite-sized tasks (2-5 minutes each). Every task has exact file paths, complete code, verification steps.
+- **E-commerce automation:** Order processing, inventory sync, shipping notifications
+- **CRM integrations:** Automated lead capture, follow-up sequences, data enrichment
+- **Data pipelines:** API-to-database sync, ETL processes, reporting automation
+- **Notification systems:** Multi-channel alerts (email, Slack, Telegram)
+- Typical result: **20+ hours/week saved per client**
 
-4. **subagent-driven-development** or **executing-plans** - Activates with plan. Dispatches fresh subagent per task with two-stage review (spec compliance, then code quality), or executes in batches with human checkpoints.
+**Tech:** n8n, REST APIs, Webhooks, PostgreSQL, various SaaS integrations
 
-5. **test-driven-development** - Activates during implementation. Enforces RED-GREEN-REFACTOR: write failing test, watch it fail, write minimal code, watch it pass, commit. Deletes code written before tests.
+---
 
-6. **requesting-code-review** - Activates between tasks. Reviews against plan, reports issues by severity. Critical issues block progress.
+### Custom Telegram Bot Development
+> Production-grade bots for crypto communities and business operations
 
-7. **finishing-a-development-branch** - Activates when tasks complete. Verifies tests, presents options (merge/PR/keep/discard), cleans up worktree.
+- Crypto alert bots — price tracking, whale monitoring, portfolio updates
+- Community management bots — user verification, moderation, analytics
+- Business notification bots — order alerts, system monitoring, reporting
+- Interactive bots with inline keyboards, callback queries, and state management
 
-**The agent checks for relevant skills before any task.** Mandatory workflows, not suggestions.
+**Tech:** Python, python-telegram-bot, aiogram, WebSocket, PostgreSQL
 
-## What's Inside
+---
 
-### Skills Library
+### Notion-Based Project Management Systems
+> Custom knowledge management and workflow systems
 
-**Testing**
-- **test-driven-development** - RED-GREEN-REFACTOR cycle (includes testing anti-patterns reference)
+- Built comprehensive project management systems in Notion
+- Automated data flow between Notion and external tools via API
+- Template systems for repeatable processes
+- Dashboard creation for real-time project visibility
 
-**Debugging**
-- **systematic-debugging** - 4-phase root cause process (includes root-cause-tracing, defense-in-depth, condition-based-waiting techniques)
-- **verification-before-completion** - Ensure it's actually fixed
+**Tech:** Notion API, Python, n8n, REST APIs
 
-**Collaboration** 
-- **brainstorming** - Socratic design refinement
-- **writing-plans** - Detailed implementation plans
-- **executing-plans** - Batch execution with checkpoints
-- **dispatching-parallel-agents** - Concurrent subagent workflows
-- **requesting-code-review** - Pre-review checklist
-- **receiving-code-review** - Responding to feedback
-- **using-git-worktrees** - Parallel development branches
-- **finishing-a-development-branch** - Merge/PR decision workflow
-- **subagent-driven-development** - Fast iteration with two-stage review (spec compliance, then code quality)
+---
 
-**Meta**
-- **writing-skills** - Create new skills following best practices (includes testing methodology)
-- **using-superpowers** - Introduction to the skills system
+### Uphold API Portfolio Tracking
+> Real-time cryptocurrency portfolio monitoring and reporting
 
-## Philosophy
+- Integration with Uphold API for live portfolio tracking
+- Automated balance monitoring and performance calculations
+- Multi-currency conversion and reporting
+- Alert systems for significant portfolio changes
 
-- **Test-Driven Development** - Write tests first, always
-- **Systematic over ad-hoc** - Process over guessing
-- **Complexity reduction** - Simplicity as primary goal
-- **Evidence over claims** - Verify before declaring success
+**Tech:** Python, Uphold API, REST, Data Visualization
 
-Read more: [Superpowers for Claude Code](https://blog.fsck.com/2025/10/09/superpowers/)
+---
 
-## Contributing
+## 📊 Business Projects
 
-Skills live directly in this repository. To contribute:
+### Construction Chemistry E-commerce Platform
+> Full-stack e-commerce solution for building materials
 
-1. Fork the repository
-2. Create a branch for your skill
-3. Follow the `writing-skills` skill for creating and testing new skills
-4. Submit a PR
+- E-commerce platform for construction chemistry products (JL Systematic s.r.o.)
+- Product catalog management, pricing engine, order processing
+- Market research and competitive analysis automation
+- Supplier integration and inventory management
 
-See `skills/writing-skills/SKILL.md` for the complete guide.
+---
 
-## Updating
+## 🛠️ Tech Stack
 
-Skills update automatically when you update the plugin:
+| Category | Technologies |
+|----------|-------------|
+| **Cloud** | AWS (VPC, ECS, Lambda, RDS, S3, CloudFront, Route53, IAM, CloudWatch) |
+| **IaC** | Terraform, CloudFormation, HCL |
+| **Containers** | Docker, Docker Compose, ECS Fargate |
+| **CI/CD** | GitHub Actions, Terraform Cloud |
+| **Languages** | Python, Rust, Solidity, TypeScript, JavaScript, HCL, Bash |
+| **Blockchain** | TON, Solana (Anchor), Ethereum (Hardhat), Web3.js, ethers.js |
+| **Automation** | n8n, Python scripts, Telegram Bot API, REST/WebSocket APIs |
+| **Databases** | PostgreSQL, DynamoDB, Redis, SQLite |
+| **Monitoring** | CloudWatch, Grafana, custom dashboards |
+| **OS** | Linux (Ubuntu), macOS |
 
-```bash
-/plugin update superpowers
-```
+---
 
-## License
+## 📜 Certifications & Education
 
-MIT License - see LICENSE file for details
+- 🎓 **Terraform Associate** — In preparation (2025/2026)
+- ☁️ **AWS Practitioner** — Hands-on production experience
+- ⛓️ **Blockchain Development** — Multi-chain (TON, Solana, Ethereum)
 
-## Support
+---
 
-- **Issues**: https://github.com/obra/superpowers/issues
-- **Marketplace**: https://github.com/obra/superpowers-marketplace
+## 💡 How I Work
+
+1. **Ship fast** — Working solution first, optimization second
+2. **Automate everything** — If I do it twice, I automate it
+3. **Clean code** — Modular, documented, maintainable
+4. **Communicate clearly** — No jargon, no surprises, regular updates
+5. **Think in systems** — Not just tasks, but scalable architectures
+
+---
+
+## 📫 Let's Work Together
+
+I'm available for:
+- **DevOps consulting & implementation** — Terraform, AWS, CI/CD
+- **Blockchain development** — Smart contracts, DeFi tools, trading systems
+- **Business automation** — n8n workflows, API integrations, Telegram bots
+- **Technical architecture** — System design, infrastructure planning
+
+📧 **Email:** [paseka10jaroslav@gmail.com]  
+💬 **Telegram:** [@Paseka89  
+🔗 **Upwork:** [JaroslavP.]  
+🌐 **GitHub:** [github.com/] paseka10jaroslav-coder
+
+---
+
+*"I don't just write code. I build systems that work while you sleep."*
