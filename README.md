@@ -1,4 +1,4 @@
-# Jaroslav Langer — Senior DevOps Engineer | Blockchain Developer | Automation Architect
+# Jaroslav Paseka — Senior DevOps Engineer | Blockchain Developer | Automation Architect
 
 [![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)](https://www.terraform.io/)
 [![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
@@ -21,8 +21,8 @@ I build cloud infrastructure that scales, blockchain tools that perform, and aut
 - Business automation that saves hundreds of hours per month
 - A systematic, ship-fast approach — I solve problems, not create meetings
 
-📧 **Contact:** [your-email@domain.com]  
-🔗 **Upwork:** [your-upwork-link]  
+📧 **Contact:** paseka10jaroslav@gmail.com
+🔗 **Upwork:** [2132675c45494c94]  
 💼 **Company:** JL Systematic s.r.o.
 
 ---
