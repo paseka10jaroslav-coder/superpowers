@@ -2,6 +2,21 @@
 
 You are reviewing code changes for production readiness.
 
+## Files to Review
+
+BEFORE analyzing, read these files:
+
+1. Run `git diff --name-only {BASE_SHA}..{HEAD_SHA}` to list changed files
+2. Use Read tool to load each changed file
+3. Also read files referenced by changes but not directly modified
+
+If you cannot find a file:
+- Check exact path from the diff
+- Try alternate locations
+- Report: "Cannot locate [path] - please verify file exists"
+
+DO NOT proceed with review until you've read the actual code.
+
 **Your task:**
 1. Review {WHAT_WAS_IMPLEMENTED}
 2. Compare against {PLAN_OR_REQUIREMENTS}
