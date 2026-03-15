@@ -17,6 +17,20 @@ This technique is particularly useful for:
 - Implementing custom ligatures
 - Fine-tuning character appearance and spacing
 
+### [Uphold–Notion Kontrola](uphold-notion-kontrola/)
+
+A Python utility that syncs live portfolio data from the **Uphold API** into a
+**Notion database** with automated validation checks (*kontrola*). This example shows:
+- How to authenticate with the Uphold v0 REST API
+- How to upsert pages in a Notion database (create or update, no duplicates)
+- How to run balance/staleness checks and surface alerts in Notion
+- How to schedule the sync with cron or GitHub Actions
+
+This technique is particularly useful for:
+- Real-time crypto/fiat portfolio dashboards in Notion
+- Automated alerting for low balances or held funds
+- Audit trails of portfolio changes over time
+
 ## Contributing Examples
 
 Examples should:
